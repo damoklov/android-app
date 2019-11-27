@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Visiti Project</string>
+    <string name="select_country">Select Country</string>
+    <string-array name="listOfCities">
+        <item> </item>
+        <item>Lviv</item>
+        <item>Lviv</item>
+        <item>Lviv</item>
+        <item>Lviv</item>
+        <item>Lviv</item>
+        <item>Lviv</item>
+        <item>Lviv</item>
+        <item>Lviv</item>
+    </string-array>
+</resources>
