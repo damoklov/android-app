@@ -1,4 +1,4 @@
-package com.example.visitiproject;
+package com.project.visiti;
 
 import org.junit.Test;
 

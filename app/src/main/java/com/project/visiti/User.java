@@ -1,8 +1,18 @@
-package com.example.visitiproject;
+package com.project.visiti;
 
-class UserExample {
+class User {
     private String email;
     private String password;
+    private String rights;
+
+    public User() {
+    }
+
+    public User(String email, String password, String rights) {
+        this.email = email;
+        this.password = password;
+        this.rights = rights;
+    }
 
     public String getRights() {
         return rights;
@@ -11,8 +21,6 @@ class UserExample {
     public void setRights(String rights) {
         this.rights = rights;
     }
-
-    private String rights;
 
     public String getEmail() {
         return email;

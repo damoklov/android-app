@@ -2,9 +2,8 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorForDropDown">#80FAFAFA</color>
+    <color name="colorAccent">#008577</color>
 
-    <color name="colorAccent">#FF0000</color>
     <color name="hintColor">#686868</color>
     <color name="colorControlNormal">#A9A9A9</color>
     <color name="colorControlActivated">#505050</color>

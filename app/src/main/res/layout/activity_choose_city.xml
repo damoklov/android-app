@@ -4,30 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".ChooseCityActivity"
     android:background="@drawable/choose_city_wallpaper">
 
-    <!--android:dropDownVerticalOffset="100dp" -->
-    <Spinner
-        android:id="@+id/choose_city_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:background="@null"
-        android:popupBackground="@color/colorForDropDown"
-        android:popupElevation="0dp"
-        android:spinnerMode="dropdown"
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/searchable_spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintText=" "
+        android:background="@drawable/custom_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.15" />
 
     <View
         android:id="@+id/view"
         android:layout_width="300dp"
         android:layout_height="2dp"
-        android:background="@drawable/custom_spinner"
+        android:background="@drawable/custom_line_for_searchable_spinner"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/choose_city_spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/searchable_spinner" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:fontFamily="@font/laranjha_light"
+        android:text="CHOOSE"
+        android:textColor="#DFDFDF"
+        android:textColorHint="#FFFFFF"
+        android:textScaleX="1.1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/laranjha_light"
+        android:text="THE"
+        android:textColor="#03978D"
+        android:textScaleX="1.2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/laranjha_light"
+        android:text="CITY"
+        android:textColor="#03978D"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/laranjha_light"
+        android:text="YOU'RE VISITING"
+        android:textColor="#DFDFDF"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/previousScreen"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:onClick="PreviousScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back" />
+
+    <ImageButton
+        android:id="@+id/nextScreen"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        android:background="#00FFFFFF"
+        android:onClick="NextScreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchable_spinner"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

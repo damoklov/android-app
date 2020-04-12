@@ -1,4 +1,4 @@
-package com.example.visitiproject;
+package com.project.visiti;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.visitiproject", appContext.getPackageName());
+        assertEquals("com.project.visiti", appContext.getPackageName());
     }
 }
