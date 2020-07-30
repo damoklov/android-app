@@ -1,5 +1,0 @@
-ID,Username,Email,Password,Salt,Registration Date,User Rights
-1,Alice,alice@example.com,123456,2f62700e2580136e7588fb55f566fc6e,28.10.2019,user
-2,Bob,bob@example.com,654321,5af605e7033987666f747e363090560e,28.10.2019,user
-3,John,john@example.com,987654,d32e017aaf4d75f7ab4e28192167b325,29.10.2019,agency
-4,Mike,mike@example.com,93495,ab3460dfaadf3096ebcff7dbd33ffc69,29.10.2019,admin
