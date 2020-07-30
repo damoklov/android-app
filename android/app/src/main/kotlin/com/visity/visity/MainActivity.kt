@@ -1,4 +1,4 @@
-package com.visity.flutter_app
+package com.visity.visity
 
 import io.flutter.embedding.android.FlutterActivity
 
